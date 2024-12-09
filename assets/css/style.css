@@ -1,0 +1,160 @@
+
+
+
+/* ESTILO GERAL*/
+*{
+    margin: 0;/* 
+    Remove as margens padrão que navegadores aplicam 
+    automaticamente a elementos como 
+    <body>, <h1>, <p>, <ul>, etc.
+    Isso garante um início "limpo" no layout.
+    Por quê usar?
+    
+    Evita inconsistências entre navegadores, onde o espaçamento padrão pode variar.
+    Dá controle total sobre o espaçamento externo dos elementos.*/
+
+    padding: 0; /*2. padding: 0;
+    Remove o preenchimento interno padrão aplicado a elementos. Assim como a margem, navegadores aplicam diferentes padrões de preenchimento, por exemplo, em botões e listas.
+    
+    Por quê usar?
+    
+    Garante que o espaço interno dos elementos não interfira no design.
+    Dá liberdade para configurar preenchimentos de maneira uniforme.*/
+        
+    box-sizing: border-box; /*Altera o modelo de cálculo do tamanho de elementos para incluir o padding e borda dentro das dimensões especificadas (largura e altura).
+    Isso significa que:
+    */         
+
+
+
+    font-family: "Poppins", serif; 
+    /* FONTE COPIADA DO SITE */
+} 
+
+body{  /*aplico uma stylização para o body*/
+    background-color: rgb(171, 171, 173); /* cor do corpo inteiro do site*/
+    height: 100vh; /*toma todo o espaço da tela*/
+}
+
+.interface{ /* aplicar estilização na interface*/
+   max-width: 1280px; /* largura maxima*/
+   margin: 0 auto; /* deixa centralizado na tela*/
+
+
+} 
+
+
+/* ESTILO DO HEADER OU CABEÇALHO*/
+header{
+     padding: 40px 5%;    
+     /*para afastar o cabeçalho  */
+     /* o 4% nao deixa que ele fique muito colado nas laterias */
+
+}
+
+ header >.interface{    
+    /* busca os elementos da interface no cabeçalho */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* para linhar os itens */
+
+
+
+}
+ 
+header a{  
+    /* CHAMO TODOS OS LINKS QUE ESTÃO NO CABEÇALHO */
+    color: black;
+
+    text-decoration: none;
+    /*  tirar o sublinhado de cada item do cabeçalho */
+
+    display: inline-block; 
+    /* OBS descrita abaixo */
+
+    transition: .2s;
+    /* transição para aumentar o tamanho de cada link do scale */
+
+} 
+header a:hover{
+    /* EFEITO PARA QUANDO O USUARIO PASSAR O MAUSE EM CIMA */
+    color: rgb(37, 0, 248);
+
+    transform: scale(1.05);
+    /* para aumentar a escala */
+    /* obs o <a> ou seja o link ele nao trabalha in line level 
+    e o transform so trabalha para block level, entao devemos
+    converter o link <a> para block level. Criamos no header a 
+    acima o display: in line block*/
+}
+
+
+
+
+
+header nav ul{ 
+    /* chamamos a lista */
+
+
+    list-style-type: none; 
+     /*para tirar as "bolinhas" marcadores da frente de cada link  */
+}
+
+
+header nav ul li{
+    /* chamamos cada iten da lista */
+
+    display: inline-block; 
+    /*  cada uma fica uma ao lado da outra */
+
+    padding: 0 40px;  
+    /* espaçamento entre cada item da lista
+    0 em cima em baixo, esquerda e direita 40px */
+
+
+}
+
+header .btn-contato button{ 
+    /* para estilisar o botao de contato */
+
+    padding: 10px 40px; 
+    /* espaçamento do botao */
+
+    font-size: 18px;
+    /* tamanho da font */
+
+    font-weight: 600;
+    /* aumentar o peso da font */
+
+    background-color: rgba(255, 0, 255, 0.87);
+
+    border: 0; 
+    /* retiramos a borda */
+
+    border-radius: 30px; 
+    /* deixamos o botao com borda circular */
+
+    cursor: pointer;
+    /* cursor muda ao passar em cima do botao */
+   
+}
+
+header .btn-contato button:hover{
+    /* efeitos para quando o usuario passar o mause me cima */
+
+    box-shadow: 0px 0px 8px rgba(255, 0, 212, 0.945); 
+
+
+} 
+
+.imagem1{
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+   
+    
+
+}
+
