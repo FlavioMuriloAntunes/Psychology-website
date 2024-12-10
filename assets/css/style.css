@@ -42,6 +42,38 @@ body{  /*aplico uma stylização para o body*/
 
 
 } 
+.flex{
+    display: flex;
+    
+}
+.btn-contato button{ 
+    /* para estilisar o botao de contato */
+
+    padding: 10px 40px; 
+    /* espaçamento do botao */
+
+    font-size: 18px;
+    /* tamanho da font */
+
+    font-weight: 600;
+    /* aumentar o peso da font */
+
+    background-color: rgba(153, 0, 255, 0.87);
+
+    border: 0; 
+    /* retiramos a borda */
+
+    border-radius: 30px; 
+    /* deixamos o botao com borda circular */
+
+    cursor: pointer;
+    /* cursor muda ao passar em cima do botao */
+
+    transition: .2s;
+   
+}
+
+
 
 
 /* ESTILO DO HEADER OU CABEÇALHO*/
@@ -117,44 +149,52 @@ header nav ul li{
 
 }
 
-header .btn-contato button{ 
-    /* para estilisar o botao de contato */
 
-    padding: 10px 40px; 
-    /* espaçamento do botao */
 
-    font-size: 18px;
-    /* tamanho da font */
-
-    font-weight: 600;
-    /* aumentar o peso da font */
-
-    background-color: rgba(255, 0, 255, 0.87);
-
-    border: 0; 
-    /* retiramos a borda */
-
-    border-radius: 30px; 
-    /* deixamos o botao com borda circular */
-
-    cursor: pointer;
-    /* cursor muda ao passar em cima do botao */
-   
-}
-
-header .btn-contato button:hover{
+.btn-contato button:hover{
     /* efeitos para quando o usuario passar o mause me cima */
 
-    box-shadow: 0px 0px 8px rgba(255, 0, 212, 0.945); 
+    box-shadow: 0px 0px 8px rgba(247, 0, 255, 0.103); 
 
+    /* para dar o efeito de zoon no segundo botao */
+    transform: scale(1.05); 
+    
 
 } 
 
-.imagem1{
-    display: flex; /* Ativa o Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-   
-    
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{
+    padding: 40px 3%;
+
 
 }
-/* vou continuar integrando com o css */
+
+section.topo-do-site .flex{
+    
+    align-items: center; 
+    /* para alinhar os itens do flex no centro */
+    justify-content: center;
+
+    /* para dar distanciamento entre os elementos */
+    gap: 10px; 
+    
+}
+
+.topo-do-site .txt-topo-site h1{ 
+    /* ajustes do texto central */
+    color: aliceblue ;
+    font-size: 42px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    /* mudar a cor do ponto final */
+    color: darkorchid;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: rgb(248, 252, 251);
+    margin: 40px 0px;
+    font-size: 33px;
+
+}
