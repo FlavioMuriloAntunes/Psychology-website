@@ -73,6 +73,16 @@ body{  /*aplico uma stylização para o body*/
    
 }
 
+h2.titulo{
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+
+}
+
+
+
+
 
 
 
@@ -145,7 +155,7 @@ header nav ul li{
     padding: 0 40px;  
     /* espaçamento entre cada item da lista
     0 em cima em baixo, esquerda e direita 40px */
-
+    font-size: larger;
 
 }
 
@@ -161,6 +171,8 @@ header nav ul li{
     
 
 } 
+
+
 
 
 
@@ -206,16 +218,27 @@ section.topo-do-site .flex{
 
 
 
+/* INTEGRANDO ANIMAÇÃO */
 
+.interface .logo img{ 
+    /* animação para flutuar o logo */
 
-.interface .logo img{
     position: relative;
     animation: flutuar 2s ease-in-out alternate infinite;
      
 
 }
 
-@keyframes flutuar{
+.txt-topo-site h1 { 
+    /* animação para surgir o texto */
+    position: relative;
+    animation: surgirDebaixo 2s ease-in-out forwards;
+}
+
+
+
+@keyframes flutuar{ 
+    /* chamo a animação de flutuar */
     0%{
         top: 0px;
 
@@ -223,4 +246,83 @@ section.topo-do-site .flex{
     100%{
         top: 30px;
     }
+}
+
+
+@keyframes surgirDebaixo{ 
+    /* chamo a animação para surgir o texto */
+
+      0%{
+        top: 100px;
+        opacity: 0;
+
+      }
+      100%{
+        top: 0;
+        opacity: 1;
+      }
+      
+
+
+}
+
+
+/* ESTILOS Da seção de sintomas  */ 
+
+
+section.sintomas{
+    /* para deixar alinhado */
+    padding: 40px 4%;
+
+
+
+
+}
+
+section.sintomas .flex{
+    
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;  
+     /*permite que os iten quebrem para  a linha seguinte  */
+    justify-content: space-between;
+} 
+
+
+
+h3 {
+    color: #fff;
+
+}
+h3 span{
+    /* deixando a palavra destacada em outra cor */
+    color: #fffb02;
+}
+
+.SINTOMAS-box{
+     /*estilizando as caixas  */
+     flex: 1 1 calc(33.33% - 20px);
+    color: #ffffff;
+    padding: 10px;
+    border: 2px solid #fff;
+    text-align: center;
+    margin-top: 20px; 
+    transition: .2s;
+    /* esta transition é para a animação de passar o mouse por cima de cada caixa */
+    border-radius: 20px;
+ } 
+
+ .SINTOMAS-box:hover{
+    /* animação para passar o mouse por cima da caixa */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #fffb0270;
+
+
+ }
+
+
+
+.SINTOMAS-box h4{
+    margin: 15px 0%;
+
 }
