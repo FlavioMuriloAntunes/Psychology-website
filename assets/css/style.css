@@ -231,6 +231,13 @@ section.topo-do-site .flex{
 }
 
 
+.SobreMim.surgir-animado{
+    animation: surgirDebaixo 2s ease-in-out forwards;
+}
+
+
+
+
 .interface .logo img{ 
     /* animação para flutuar o logo */
 
@@ -254,7 +261,10 @@ section.topo-do-site .flex{
     
 }
 
-
+.SobreMim .interface .flex .texto{
+    position: relative;
+    animation: surgirDebaixo 2s ease-in-out forwards;
+}
 
 
 @keyframes flutuar{ 
@@ -367,4 +377,32 @@ h3 span{
 .SINTOMAS-box.surgir-animado {
     opacity: 1; /* Fica visível */
     transform: translateY(0); /* Desce para a posição original */
+}
+
+
+/* estilo seção sobre  */
+
+section.SobreMim{
+    padding: 100px 4%;
+}
+
+section.SobreMim .flex{ 
+ 
+   
+    gap: 100px;
+
+
+}
+section.SobreMim .flex img{
+    justify-content: space-between;
+    border-radius: 30px;
+} 
+
+section.SobreMim .flex .texto{
+    color: #fff;
+}  
+
+section .SobreMim .flex .texto h1{
+    justify-content: center;
+
 }
