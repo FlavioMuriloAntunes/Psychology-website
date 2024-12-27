@@ -384,6 +384,32 @@ h3 span{
 }
 
 
+
+/* ESTILO DA SEÇÃO COMO FUNCIONA A TERAPIA */
+
+
+section.Comofunciona{
+    padding: 10% 14%;
+    align-items: center; 
+    gap: 100px;
+
+
+}
+
+section.Comofunciona .interface .flex{
+   display: flex;
+   justify-content: space-between;
+    
+
+} 
+
+h2{
+        color: #fff;
+}   
+
+
+
+
 /* ESTILO SEÇÃO SOBRE MIM */
 section.SobreMim.texto{
     opacity: 0;
@@ -429,3 +455,26 @@ section .SobreMim .flex .texto h1{
     justify-content: center;
 
 } 
+
+.Box{
+    border-radius: 20px;
+    flex: 1 1 calc(33.33% - 20px);
+    color: #ffffff;
+    padding: 5px;
+    border: 2px solid #fff;
+    text-align: center;
+    margin-top: 20px; 
+    transition: .2s;
+    /* esta transition é para a animação de passar o mouse por cima de cada caixa */
+    border-radius: 20px;
+ 
+
+}
+
+.Box:hover{
+    /* animação para passar o mouse por cima da caixa */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #fffb0270;
+
+
+ }
