@@ -1,6 +1,3 @@
-
-
-
 /* ESTILO GERAL*/
 *{
     margin: 0;/* 
@@ -109,7 +106,7 @@ header{
  
 header a{  
     /* CHAMO TODOS OS LINKS QUE ESTÃO NO CABEÇALHO */
-    color: black;
+    color: #fff;
 
     text-decoration: none;
     /*  tirar o sublinhado de cada item do cabeçalho */
@@ -135,6 +132,13 @@ header a:hover{
 
 
 
+header nav ul li a {
+    /*  estilo para o menu de interação */
+    background-color: rgba(255, 255, 255, 0.1);  /* Fundo leve e translúcido */
+    padding: 8px 15px;  /* Um pouco mais de espaçamento */
+    border-radius: 20px;  /* Borda arredondada */
+    transition: all 0.4s ease;  /* Suaviza a transição de efeitos */
+}
 
 
 header nav ul{ 
@@ -231,6 +235,13 @@ section.topo-do-site .flex{
 }
 
 
+.SobreMim.surgir-animado{
+    animation: surgirDebaixo 2s ease-in-out forwards;
+}
+
+
+
+
 .interface .logo img{ 
     /* animação para flutuar o logo */
 
@@ -254,7 +265,10 @@ section.topo-do-site .flex{
     
 }
 
-
+.SobreMim .interface .flex .texto{
+    position: relative;
+    animation: surgirDebaixo 2s ease-in-out forwards;
+}
 
 
 @keyframes flutuar{ 
@@ -299,7 +313,7 @@ section.topo-do-site .flex{
 
 section.sintomas{
     /* para deixar alinhado */
-    padding: 40px 4%;
+    padding: 110px 4%;
 
 
 
@@ -368,3 +382,99 @@ h3 span{
     opacity: 1; /* Fica visível */
     transform: translateY(0); /* Desce para a posição original */
 }
+
+
+
+/* ESTILO DA SEÇÃO COMO FUNCIONA A TERAPIA */
+
+
+section.Comofunciona{
+    padding: 10% 14%;
+    align-items: center; 
+    gap: 100px;
+
+
+}
+
+section.Comofunciona .interface .flex{
+   display: flex;
+   justify-content: space-between;
+    
+
+} 
+
+h2{
+        color: #fff;
+}   
+
+
+
+
+/* ESTILO SEÇÃO SOBRE MIM */
+section.SobreMim.texto{
+    opacity: 0;
+    transform: translate(20px);
+      /*começa um pouco abaixo  */
+    transition: opacity 1.5s ease, transform 0.5s ease;  
+
+}
+
+
+section.SobreMim.texto .surgir-animado{
+    opacity: 1;
+    transform: matrix(0);
+
+}
+
+
+
+
+
+
+section.SobreMim{
+    padding: 100px 4%;
+}
+
+section.SobreMim .flex{ 
+ 
+   
+    gap: 100px;
+
+
+}
+section.SobreMim .flex img{
+    justify-content: space-between;
+    border-radius: 30px;
+} 
+
+section.SobreMim .flex .texto{
+    color: #fff;
+}  
+
+section .SobreMim .flex .texto h1{
+    justify-content: center;
+
+} 
+
+.Box{
+    border-radius: 20px;
+    flex: 1 1 calc(33.33% - 20px);
+    color: #ffffff;
+    padding: 5px;
+    border: 2px solid #fff;
+    text-align: center;
+    margin-top: 20px; 
+    transition: .2s;
+    /* esta transition é para a animação de passar o mouse por cima de cada caixa */
+    border-radius: 20px;
+ 
+
+}
+
+.Box:hover{
+    /* animação para passar o mouse por cima da caixa */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #fffb0270;
+
+
+ }

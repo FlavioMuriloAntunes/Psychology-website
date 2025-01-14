@@ -16,4 +16,7 @@ const observer = new IntersectionObserver((entries, observer) => {
   const boxes = document.querySelectorAll('.SINTOMAS-box');
   boxes.forEach(box => {
     observer.observe(box);
-  });
+  }); 
+
+
+  
