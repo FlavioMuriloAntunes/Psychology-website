@@ -410,71 +410,32 @@ h2{
 
 
 
-/* ESTILO SEÇÃO SOBRE MIM */
-section.SobreMim.texto{
-    opacity: 0;
-    transform: translate(20px);
-      /*começa um pouco abaixo  */
-    transition: opacity 1.5s ease, transform 0.5s ease;  
-
-}
-
-
-section.SobreMim.texto .surgir-animado{
-    opacity: 1;
-    transform: matrix(0);
-
-}
-
-
-
-
-
-
-section.SobreMim{
-    padding: 100px 4%;
-}
-
-section.SobreMim .flex{ 
- 
-   
-    gap: 100px;
-
-
-}
-section.SobreMim .flex img{
-    justify-content: space-between;
-    border-radius: 30px;
-} 
-
-section.SobreMim .flex .texto{
-    color: #fff;
-}  
-
-section .SobreMim .flex .texto h1{
-    justify-content: center;
-
-} 
-
-.Box{
+.SobreMim .box1 {
+    background-color: #f5f5f5;
+    padding: 20px;
     border-radius: 20px;
-    flex: 1 1 calc(33.33% - 20px);
-    color: #ffffff;
-    padding: 5px;
-    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    grid-template-rows: repeat(2, auto); /* Duas linhas automáticas */
+    gap: 20px; /* Espaçamento entre as caixas */
+}
+
+.SobreMim .box1 .texto {
     text-align: center;
-    margin-top: 20px; 
-    transition: .2s;
-    /* esta transition é para a animação de passar o mouse por cima de cada caixa */
-    border-radius: 20px;
- 
-
 }
 
-.Box:hover{
-    /* animação para passar o mouse por cima da caixa */
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #fffb0270;
+.SobreMim .box1 img {
+    margin-bottom: 10px;
+}
 
+.SobreMim .box1 h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
 
- }
+.SobreMim .box1 p {
+    color: #666;
+}
