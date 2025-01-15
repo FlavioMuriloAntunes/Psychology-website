@@ -410,32 +410,70 @@ h2{
 
 
 
-.SobreMim .box1 {
-    background-color: #f5f5f5;
+
+
+
+
+
+
+
+
+/*  estilo sobre mim */
+
+.sobreMim{
+
+    height: 100vh; /* Faz com que a seção ocupe 100% da altura da tela */
+
+
+    max-width: 1200px; 
+    /* define o tamanho da seção */
+
+
+    margin:  50px auto; 
+    /* Centraliza a seção com 50px de margem superior e inferior */
+
+
     padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas */
-    grid-template-rows: repeat(2, auto); /* Duas linhas automáticas */
-    gap: 20px; /* Espaçamento entre as caixas */
+    /* adiciona 20 px de espaçamento destro da seção */
+
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave em torno da seção */
+
 }
 
-.SobreMim .box1 .texto {
+
+
+.sobreMim h2{
     text-align: center;
 }
-
-.SobreMim .box1 img {
-    margin-bottom: 10px;
+.Conteudo {
+    display: flex; /* Utiliza flexbox para alinhar os itens */
+    align-items: flex-start; /* Alinha os itens verticalmente no centro */
+    gap: 50px; ;
 }
 
-.SobreMim .box1 h2 {
-    color: #333;
-    font-size: 22px;
-    margin-bottom: 10px;
+.imagem {
+    /* Assegura que a imagem tenha um tamanho fixo e se ajuste adequadamente */
+    width: 250px; /* Ajuste do tamanho da imagem */
+    height: auto; /* Manter a proporção da imagem */
 }
 
-.SobreMim .box1 p {
-    color: #666;
+
+.box1 {
+    /* Estilo da caixa de texto */
+    max-width: 500px; /* Limita a largura da caixa de texto */
+    flex-grow: 1; /* A caixa de texto pode crescer para preencher o espaço disponível */
+} 
+
+
+.box1 h3 {
+    margin-top: 0; /* Remove o espaçamento superior dos títulos */
+    font-size: 1.5em; /* Ajusta o tamanho dos títulos */
+    color: #333; /* Cor do texto dos títulos */
+}
+
+.box1 p {
+    font-size: 1em; /* Tamanho do texto */
+    color: #666; /* Cor do texto */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas para melhor legibilidade */
 }
